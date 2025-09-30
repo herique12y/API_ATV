@@ -10,7 +10,7 @@ export const buscarTabelaBraPornome = (timeBra) => {
 
 export const buscarTimePorId = (id) => {
     const idBra = parseInt(id);
-    return idBra.find(time => time.id === idBra)
+    return tabelaBRA.find(time => time.id === idBra);
 };
 
 export function buscarTimePorSigla(sigla) {

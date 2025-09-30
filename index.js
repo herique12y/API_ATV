@@ -10,7 +10,7 @@ const app = express();
 
 app.get('/bra', (req, res) => {
     const timeBRA = req.query.busca;
-    const resultado = timeBRA ? buscarTabelaBraPornome(timeBRA) : buscarTabela;
+    const resultado = timeBRA ? buscarTabelaBraPornome(timeBRA) : buscarTabela();
 
     if (resultado.length > 0) {
         res.json(resultado);
